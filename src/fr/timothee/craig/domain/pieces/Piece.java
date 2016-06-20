@@ -7,7 +7,7 @@ import fr.timothee.craig.domain.Position;
  * Created by Timothee on 05/06/2016.
  */
 public class Piece {
-    private Position _position; //x, y
+    private Position position; //x, y
     private PieceType pieceType; // Cross or nought
 
     public Piece(){
@@ -15,15 +15,15 @@ public class Piece {
     }
 
     private void initPosition(){
-        this._position = new Position();
+        this.position = new Position();
     }
 
     public Position getPosition(){
-        return this._position;
+        return this.position;
     }
 
     public void setPosition(int x, int y) {
-        this._position = new Position(x, y);
+        this.position = new Position(x, y);
     }
 
 
